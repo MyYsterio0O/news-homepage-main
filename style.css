@@ -101,4 +101,35 @@ aside{
     flex-flow: column nowrap;
     background-color: var(--verydarkblue);
     color: var(--offwhite);
+    margin-bottom:35px;
+}
+#aside-header{
+    font-size:3rem;
+    font-weight:700;
+    color:var(--softorange);
+    margin: 40px 0 13px 25px;
+}
+aside div{
+    padding: 25px 25px 15px 25px;
+}
+aside div header{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--offwhite);
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+aside div header:hover{
+    color:var(--softorange);
+}
+aside div p{
+    padding-top: 15px;
+    color: var(--grayishblue);
+}
+aside div .after::after{
+    content: "";
+    width: 100%;
+    border-bottom: 1px solid white;
+    display:block;
+    padding-top: 35px;
 }
