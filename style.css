@@ -1,0 +1,104 @@
+:root{
+    --offwhite: hsl(36, 100%, 99%);
+    --grayishblue: hsl(233, 8%, 79%);
+    --darkgrayishblue: hsl(236, 13%, 42%);
+    --verydarkblue: hsl(240, 100%, 5%);
+    --softorange: hsl(35, 77%, 62%);
+    --softred: hsl(5, 85%, 63%);
+}
+    /* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    margin: 6vh auto 0 auto;
+    width: 1300px;
+}
+main{
+    display:flex;
+    flex-wrap: wrap;
+}
+    /* NAVIGATION BAR */
+#main-header{
+    display:flex;
+    justify-content: space-between;
+    padding: 0 0 50px 0;
+}
+#main-header img{
+    width: 65px; 
+    height: 40px;
+}
+.nav{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.nav li{
+    padding: 10px 20px 10px 20px;
+    font-size: 1.1rem;
+    color: var(--darkgrayishblue);
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+.nav li:hover{
+    color: var(--softorange);
+}
+    /* FIRST ARTICLE */
+.bright-future{
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 605px;
+    padding-bottom:35px;
+}
+.bright-future img{
+    width: 100%;
+}
+.bright-future header{
+    width: 50%;
+    color: var(--verydarkblue);
+    padding-right:10%;
+    padding-top: 30px;
+    line-height: 3.8rem;
+    font-size: 3.7rem;
+    font-weight: 800;
+}
+.bright-future div{
+    width: 50%;
+    color: var(--darkgrayishblue);
+    padding-left:5%;
+    padding-top: 30px;
+    line-height: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bright-future div span{
+    background-color: var(--softred);
+    color: var(--offwhite);
+    width: 200px;
+    padding: 15px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 10px;
+}
+.bright-future div span:hover{
+    background-color: var(--verydarkblue);
+}
+    /* ASIDE */
+aside{
+    width:475px;
+    margin-left: 25px;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: var(--verydarkblue);
+    color: var(--offwhite);
+}
