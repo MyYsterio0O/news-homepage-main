@@ -89,19 +89,21 @@ main{
     letter-spacing: 4px;
     transition: all 0.2s ease-in-out;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 .bright-future div span:hover{
     background-color: var(--verydarkblue);
 }
     /* ASIDE */
 aside{
-    width:475px;
+    width:455px;
     margin-left: 25px;
     display: flex;
     flex-flow: column nowrap;
     background-color: var(--verydarkblue);
     color: var(--offwhite);
     margin-bottom:35px;
+    margin-right: 20px;
 }
 #aside-header{
     font-size:3rem;
@@ -129,7 +131,42 @@ aside div p{
 aside div .after::after{
     content: "";
     width: 100%;
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid var(--darkgrayishblue);
     display:block;
     padding-top: 35px;
+}
+    /* BOTTOM ARTICLES */
+.nextarticles{
+    display: flex;
+    justify-content: space-between;
+}
+.nextarticles article{
+    display:flex;
+}
+.nextarticles article img{
+    height: 160px;
+}
+.bottom-containers{
+    display:flex;
+    flex-direction:column;
+    padding-left: 15px;
+    justify-content: space-between;
+    width: 51%;
+}
+.bottom-containers div{
+    color: var(--grayishblue);
+    font-size: 2.5rem;
+}
+.bottom-containers header{
+    font-weight:700;
+    font-size: 1.2rem;
+    cursor:pointer;
+    transition: all 0.15s ease-in-out;
+}
+.bottom-containers header:hover{
+    color: var(--softred);
+}
+.bottom-containers p{
+    line-height: 2rem;
+    color: var(--darkgrayishblue)
 }
