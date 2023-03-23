@@ -11,8 +11,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://www.frontendmentor.io/solutions/first-project-with-js-OFUhsFOdsf
-- Live Site URL: https://jovial-selkie-bea8f1.netlify.app
+- Solution URL: https://www.frontendmentor.io/solutions/flexbox-and-responsive-site-development-Gv52Qlf7oo
+- Live Site URL: https://preeminent-douhua-11bcbd.netlify.app
 
 ### Built with
 
