@@ -94,6 +94,9 @@ main{
 .bright-future div span:hover{
     background-color: var(--verydarkblue);
 }
+#bright-future-mobile{
+    display: none;
+}
     /* ASIDE */
 aside{
     width:455px;
@@ -169,4 +172,78 @@ aside div .after::after{
 .bottom-containers p{
     line-height: 2rem;
     color: var(--darkgrayishblue)
+}
+
+
+    /* ATTRIBUTION */
+.attribution {
+     font-size: 11px; 
+     text-align: center; 
+     margin-top:50px;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width:1300px){
+    body{
+        width: 100%;
+    }
+    .bright-future{
+        width: 100%;
+    }
+    aside{
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .bottom-containers p{
+        line-height:normal;
+    }
+}
+@media only screen and (max-width: 800px){
+    .nextarticles{
+        flex-flow: wrap;
+        justify-content: space-around;
+    }
+    .nextarticles article{
+        width: 75%;
+        padding-top:20px;
+    }
+}
+@media only screen and (max-width: 720px){
+    .bright-future header{
+        font-size: 3.4rem;
+    }
+    .bright-future div{
+        justify-content: normal;
+    }
+}
+@media only screen and (max-width: 686px){
+    /* FIRST ARTICLE */
+    #bright-future-mobile{
+        display:initial;
+    }
+    #bright-future-desktop{
+        display: none;
+    }
+    .bright-future{
+        flex-flow: column nowrap;
+    }
+    .bright-future header{
+        width: 70%;
+        padding-left: 7%
+    }
+    .bright-future div{
+        width: 100%;
+        padding-left: 7%
+    }
+    .bright-future div p{
+        width: 50%;
+    }
+    .bright-future div span{
+        margin-top: 25px;
+    }
+    /* MOBILE MENU */
 }
